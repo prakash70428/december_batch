@@ -27,7 +27,7 @@ public class pattern_2 {
         	}
         	
         	//next row prepration
-        	System.out.println();
+        	System.out.println(); 
         	row++;
         	spaces--;
         	stars++;
