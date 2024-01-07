@@ -19,7 +19,6 @@ public class rotate_an_array {
         	System.out.print(arr[i] + " ");
         }
 	}
-	
 	public static void rotate(int[] arr,int k) {
 		k = k % arr.length;
 		if(k < 0) {
@@ -30,7 +29,6 @@ public class rotate_an_array {
 		reverse(arr , 0 , k - 1);
 		reverse(arr , k , arr.length - 1);
 	}
-	
 	public static void reverse(int[] arr,int left,int right) {
 		while(left < right) {
 			int temp = arr[left];
@@ -41,5 +39,5 @@ public class rotate_an_array {
 			right--;
 		}
 	}
-
+	
 }
