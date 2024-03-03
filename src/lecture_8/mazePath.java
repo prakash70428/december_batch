@@ -25,7 +25,7 @@ public class mazePath {
 		ArrayList<String> rr2 = getMazePath(sr+1,sc,dr,dc);
 		
 		ArrayList<String> mr = new ArrayList<>();
-		for(int i=0 ; i < rr1.size();i++) {
+		for(int i=0 ; i < rr1.size();i++){
 			mr.add("H" + rr1.get(i));
 		}
 		for(int i=0 ; i < rr2.size();i++) {
