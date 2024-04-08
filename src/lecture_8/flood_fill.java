@@ -27,7 +27,7 @@ public class flood_fill {
 			return;
 		}
 		
-		visited[sr][sc] = true;
+		visited[sr][sc] = true; 
 		floodfill(maze,sr - 1,sc,asf + "t",visited);
 		floodfill(maze,sr,sc - 1,asf + "l",visited);
 		floodfill(maze,sr + 1,sc,asf + "d",visited);
