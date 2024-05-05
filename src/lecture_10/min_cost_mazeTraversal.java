@@ -14,10 +14,10 @@ public class min_cost_mazeTraversal {
         	}
         }
         
-//        int[][] dp = new int[n][m];
-//        System.out.println(minCost(arr,0,0,dp));
+        int[][] dp = new int[n][m];
+        System.out.println(minCost(arr,0,0,dp));
         
-        System.out.println(minCostTab(arr));
+       //System.out.println(minCostTab(arr));
 	}
 	
 	public static int minCost(int[][] arr,int sr,int sc,int[][] dp) {
@@ -48,10 +48,10 @@ public class min_cost_mazeTraversal {
 					dp[i][j] = arr[i][j];
 				}
 				else if(i == dp.length - 1) {
-					dp[i][j] = dp[i][j+1] + arr[i][j];
+					dp[i][j] = dp[i][j+1] + arr[i][j];  //last row
 				}
 				else if(j == dp[0].length - 1) {
-					dp[i][j] = dp[i+1][j] + arr[i][j];
+					dp[i][j] = dp[i+1][j] + arr[i][j];  //last column
 				}
 				else {
 					dp[i][j] = Math.min(dp[i+1][j],dp[i][j+1]) + arr[i][j];
