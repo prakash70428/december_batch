@@ -3,18 +3,18 @@ import java.util.*;
 public class constructor {
 
 	public static class Person{
-		
-		
-		String name = "A";
-		int age = 10;
+		String name;
+		int age;
 		
 		//parametrized constructor
-//		public Person(String name,int age) {
-//			this.name = name ;
-//			this.age = age;
-//		}
-		
-		
+		public Person(String name,int age) {
+			this.name = name;
+			this.age = age;
+		}
+		//default constructor
+		public Person() {
+			
+		}
 		
 		public void SayHi() {
 			System.out.println(name + "@" + age + " Say Hi");
@@ -24,13 +24,10 @@ public class constructor {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Person p1 = new Person();
+		Person p1 = new Person("A",10);
 		p1.SayHi();
 		
-		
-//		p1.SayHi();
-//		
-//		Person p2 = new Person();
+		Person p2 = new Person();
 	}
 
 }
